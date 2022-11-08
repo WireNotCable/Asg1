@@ -7,5 +7,5 @@ Features :
 - It will have a search bar, price range filter.
 - Itemms, price, review and description will be available for each item listing.
 - It will have a shopping cart (if possible)
-- It will include a checkout page
+- It will include a checkout page for user to enter their bank card information, address etc.
 
