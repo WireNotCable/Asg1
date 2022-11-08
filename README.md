@@ -1,8 +1,8 @@
 # Asg1
 
-Objective : This is an ecommerce website for users to buy items. 
+#Objective : This is an ecommerce website for users to buy items. 
 
-Features : 
+#Features : 
 
 Login page:
 - Prompt user to enter username and password.
