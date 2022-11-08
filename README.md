@@ -13,7 +13,7 @@ Home page:
 - It will have a search bar, price range filter.
 
 Respective category page:
-- Itemms, price, review and description will be available for each item listing.
+- Items, price, review and description will be available for each item listing.
 
 Shopping cart page:
 - It will have a shopping cart (if possible)
