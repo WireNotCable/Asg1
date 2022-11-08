@@ -1,6 +1,7 @@
 # Asg1
 
-# Objective : This is an ecommerce website for users to buy items. 
+# Objective : 
+This is an ecommerce website for users to buy items. 
 
 # Features : 
 
