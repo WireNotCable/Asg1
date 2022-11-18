@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    font-family: "Calibri";
+}
+
+/* navigation bar */
+
+nav {
+    background-color:#00704A;
+    height: 85px;
+    width: 100%;
+    position: fixed;
+}
+nav ul { 
+    /* position: relative;
+    top: 0%;
+    margin-left: 8rem; */
+    float:right;
+    margin-right:15px;
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 85px;
+    margin: auto;
+    padding-right: 1.5rem;
+
+}
+nav ul li a {
+    color:white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+} 
+nav ul li a:hover {
+    text-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+#starbuckslogo {
+    /* height: 100%;
+    width: 100%;
+    margin-left: 0; */
+    width: 5%;
+    position: relative; 
+    top: 10%; 
+    left: 30px;
+}
+@media only screen and (max-width: 576px){
+    nav ul li a {
+        color:white;
+        font-size: 1rem;
+        text-transform: uppercase;
+    } 
+    #starbuckslogo {
+        /* height: 100%;
+        width: 100%;
+        margin-left: 0; */
+        width: 10%;
+        position: absolute; 
+        align-items: center;
+        top: 15%;
+        left: 30px;
+    }
+    .slider img {
+        object-fit: fill;
+    }
+}
+/* slider animation */
+
+.slider{
+    position: relative;
+} 
+.slideshow {
+    width:100%;
+    display:flex;
+    animation: slide 10s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translate(-100%);
+    }
+    50%{
+        transform: translate(-100%);
+    }
+    55%{
+        transform: translate(-200%);
+    }
+    75%{
+        transform: translate(-200%);
+    }
+    80%{
+        transform: translate(-300%);
+    }
+    100%{
+        transform: translate(-300%);
+    }
+
+}
+.slider img{
+    width:100%;
+} 
+
+
