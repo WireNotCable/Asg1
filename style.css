@@ -11,9 +11,10 @@ body{
 
 nav {
     background-color:#00704A;
-    height: 85px;
+    height: 95px;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 nav ul { 
     /* position: relative;
@@ -25,15 +26,16 @@ nav ul {
 }
 nav ul li {
     display: inline-block;
-    line-height: 85px;
+    /* line-height: 0px; */
     margin: auto;
     padding-right: 1.5rem;
-
 }
 nav ul li a {
     color:white;
     font-size: 1.5rem;
     text-transform: uppercase;
+    position:relative;
+    top: 20px;
 } 
 nav ul li a:hover {
     text-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
@@ -42,9 +44,9 @@ nav ul li a:hover {
     /* height: 100%;
     width: 100%;
     margin-left: 0; */
-    width: 5%;
+    width: 4%;
     position: relative; 
-    top: 10%; 
+    top: 20%; 
     left: 30px;
 }
 @media only screen and (max-width: 576px){
@@ -71,6 +73,7 @@ nav ul li a:hover {
 
 .slider{
     position: relative;
+    top:95px;
 } 
 .slideshow {
     width:100%;
@@ -108,4 +111,105 @@ nav ul li a:hover {
     width:100%;
 } 
 
+/* footer */
 
+footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #00704A;
+    top:95px;
+  }
+  footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.4);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    footer .col {
+      width: 33%;
+    }
+    footer .col h1 {
+      font-size: 14px;
+    }
+    footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      footer .col {
+        width: 50%;
+      }
+      footer .col h1 {
+        font-size: 14px;
+      }
+      footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    footer .col {
+      width: 100%;
+    }
+  }
