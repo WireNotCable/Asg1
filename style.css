@@ -57,6 +57,7 @@ nav ul li a:hover {
     width:100%;
     height: auto;
     overflow-x: hidden;
+    font-family: "Calibri";
   }
   nav{
     flex-wrap: wrap;
