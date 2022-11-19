@@ -78,7 +78,7 @@ nav ul li a:hover {
       width: 8%;
       position: absolute; 
       align-items: center;
-      top: 15%;
+      top: 20%;
       left: 30px;
   }
   .slider img {
@@ -156,28 +156,28 @@ footer .col ul li {
 }
 .social ul li a:link,.social ul li a:visited{
   text-decoration: none;
-  color:#999999;
+  color:#8e8e8e;
 }
 .social ul li a:hover{
   color: #ffffff;
 }
 
 footer .col ul li:hover {
-  color: #ffffff;
-  transition: .1s;
+  color: white;
+  transition: .05s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
 }
 .clearfix {
   clear: both;
 }
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .contain {
     width: 100%;
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 1139px) {
+@media screen and (max-width: 1139px) {
   .contain .social {
     width: 100%;
     display: block;
@@ -186,7 +186,7 @@ footer .col ul li:hover {
     margin: 0px;
   }
 }
-@media only screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {
   footer .col {
     width: 33%;
   }
@@ -197,7 +197,7 @@ footer .col ul li:hover {
     font-size: 13px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     footer .col {
       width: 50%;
     }
@@ -208,7 +208,7 @@ footer .col ul li:hover {
       font-size: 13px;
     }
 }
-@media only screen and (max-width: 340px) {
+@media screen and (max-width: 340px) {
   footer .col {
     width: 100%;
   }
