@@ -55,6 +55,7 @@ nav ul li a:hover {
   }
   body{
     width:100%;
+    overflow-x: hidden;
   }
   nav{
     flex-wrap: wrap;
