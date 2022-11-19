@@ -5,14 +5,15 @@
 }
 body{
   font-family: "Calibri";
+  overflow-x: hidden;
 }
 
 /* navigation bar */
 nav {
   background-color:#00704A;
   height: 95px;
-  width: 1200px;
-  position: fixed;
+  width: 100%;
+  position: absolute;
   z-index: 1;
 }
 nav ul { 
@@ -46,9 +47,6 @@ nav ul li a:hover {
   left: 30px;
 }
 @media only screen and (max-width: 576px){
-  *{
-    overflow: hidden;
-  }
   nav ul li {
     display: inline-block;
     /* line-height: 0px; */
@@ -147,7 +145,6 @@ footer .col ul li {
 .social ul li a:hover{
   color: #ffffff;
 }
-
 
 footer .col ul li:hover {
   color: #ffffff;
