@@ -83,7 +83,7 @@ nav ul li a:hover {
       left: 30px;
   }
   .slider img {
-      object-fit: fill;
+      object-fit: cover;
   }
 }
 /* slider animation */
