@@ -47,6 +47,14 @@ nav ul li a:hover {
   left: 30px;
 }
 @media only screen and (max-width: 576px){
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  body{
+    width:100%;
+  }
   nav ul li {
     display: inline-block;
     /* line-height: 0px; */
@@ -157,7 +165,7 @@ footer .col ul li:hover {
 }
 @media only screen and (min-width: 1280px) {
   .contain {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
 }
