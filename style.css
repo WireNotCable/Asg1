@@ -11,7 +11,7 @@ body{
 nav {
   background-color:#00704A;
   height: 95px;
-  width: 100%;
+  width: 1200px;
   position: fixed;
   z-index: 1;
 }
@@ -46,13 +46,22 @@ nav ul li a:hover {
   left: 30px;
 }
 @media only screen and (max-width: 576px){
+  *{
+    overflow: hidden;
+  }
+  nav ul li {
+    display: inline-block;
+    /* line-height: 0px; */
+    margin: auto;
+    padding-right: 1.5rem;
+  }
   nav ul li a {
       color:white;
       font-size: 1rem;
       text-transform: uppercase;
   } 
   #starbuckslogo {
-      width: 10%;
+      width: 8%;
       position: absolute; 
       align-items: center;
       top: 15%;
