@@ -179,7 +179,7 @@ footer .col ul li:hover {
 }
 @media only screen and (max-width: 1139px) {
   .contain .social {
-    width: 1000px;
+    width: 100%;
     display: block;
   }
   .social h1 {
