@@ -8,7 +8,6 @@ body{
 }
 
 /* navigation bar */
-
 nav {
   background-color:#00704A;
   height: 95px;
@@ -41,9 +40,6 @@ nav ul li a:hover {
   text-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
 }
 #starbuckslogo {
-  /* height: 100%;
-  width: 100%;
-  margin-left: 0; */
   width: 4%;
   position: relative; 
   top: 20%; 
@@ -56,9 +52,6 @@ nav ul li a:hover {
       text-transform: uppercase;
   } 
   #starbuckslogo {
-      /* height: 100%;
-      width: 100%;
-      margin-left: 0; */
       width: 10%;
       position: absolute; 
       align-items: center;
@@ -70,55 +63,32 @@ nav ul li a:hover {
   }
 }
 /* slider animation */
-
-.slider{
+.slideshow-container {
+  max-width: 100%;
   position: relative;
+  margin:auto; 
   top:95px;
-} 
-.slideshow {
-  width:100%;
-  display:flex;
-  animation: slide 10s infinite;
 }
-@keyframes slide{
-  0%{
-      transform: translateX(0);
-  }
-  25%{
-      transform: translateX(0);
-  }
-  30%{
-      transform: translate(-100%);
-  }
-  50%{
-      transform: translate(-100%);
-  }
-  55%{
-      transform: translate(-200%);
-  }
-  75%{
-      transform: translate(-200%);
-  }
-  80%{
-      transform: translate(-300%);
-  }
-  100%{
-      transform: translate(-300%);
-  }
-
+.active {
+  background-color: #717171;
 }
-.slider img{
-  width:100%;
-} 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: 0.5} 
+  to {opacity: 1}
+}
 
-/* footer */
-
+/* FOOTER */
 footer {
   width: 100%;
   position: relative;
   height: auto;
   background-color: #00704A;
-  top:95px;
+  top:90px;
 }
 footer .col {
   width: 190px;
