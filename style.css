@@ -77,8 +77,7 @@ nav ul li a:hover {
   #starbuckslogo {
       width: 8%;
       position: absolute; 
-      align-items: center;
-      top: 50%;
+      top: 25px;
       left: 30px;
   }
   .slider img {
