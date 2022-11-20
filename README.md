@@ -21,3 +21,5 @@ Shopping cart page:
 Checkout page:
 - It will include a checkout page for user to enter their bank card information, address etc.
 
+# Technologies Used
+
