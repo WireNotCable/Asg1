@@ -171,8 +171,8 @@ footer .col ul li:hover {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 1139px) {
-  .contain .social {
+@media screen and (max-width: 1024px) {
+  .footer-container .social {
     width: 100%;
     display: block;
   }
@@ -180,7 +180,7 @@ footer .col ul li:hover {
     margin: 0px;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 800px) {
   footer .col {
     width: 33%;
   }
@@ -192,7 +192,7 @@ footer .col ul li:hover {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
     footer .col {
       width: 50%;
     }
@@ -203,7 +203,7 @@ footer .col ul li:hover {
       font-size: 14px;
     }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 320px) {
   footer .col {
     width: 100%;
   }
