@@ -5,6 +5,7 @@ This is a starbucks website for users to buy coffee and merchandise.
 
 # Design Process:
 As a user, I am sometimes unaware of which things are clickable, so i decided to add hover effect to any clickable texts and buttons.
+
 As a user, I want to have a hierarchy level so that the website is viewed from the top to bottom.
 
 # Features : 
