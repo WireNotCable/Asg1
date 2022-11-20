@@ -8,13 +8,16 @@ As a user, I am sometimes unaware of which things are clickable, so i decided to
 
 As a user, I want to have a hierarchy level so that the website is viewed from the top to bottom.
 
+As a user, I want to have similar colour schemes as starbucks for better relatability so i decided to make white and green the main colours of my website.
+
 [Link to Wireframe](https://xd.adobe.com/view/3a7223c1-9222-46d4-af8e-2bbc6678f171-6f21/)
 
 # Features : 
 
 Home page:
 - It will include a homepage with a navigation bar for the different categories of items. User will be brought to the respective category page after they click on the category.
-- It will have a search bar, price range filter.
+- It will include banners on the current events/promotions as a slideshow.
+- It will include a footer with content related to the company and its social media sites.
 
 Respective category page:
 - Description and price will be available for each item listing. There are also "+" and "-" buttons for user to select the quantity of the item they want and a "add to cart" button.
