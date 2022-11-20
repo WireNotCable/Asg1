@@ -30,6 +30,7 @@ Checkout page:
 Images and Content
 - [Starbucks Singapore website](https://www.starbucks.com.sg/)
 - [Starbucks Coffee Company](https://www.starbucks.com/)
+
 Acknowledgement
 - [W3Schools](https://www.w3schools.com/html/)
 - NavBar was inspired by [CodePen](https://codepen.io/themustafaomar/pen/VKbQye)
