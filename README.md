@@ -27,4 +27,12 @@ Checkout page:
 - Javascript
 
 # Credits
+Images and Content
+- [Starbucks Singapore website](https://www.starbucks.com.sg/)
+- [Starbucks Coffee Company](https://www.starbucks.com/)
+Acknowledgement
+- [W3Schools](https://www.w3schools.com/html/)
+- NavBar was inspired by [CodePen](https://codepen.io/themustafaomar/pen/VKbQye)
+- Shopping Cart page was inspired by [UX Planet](https://uxplanet.org/how-to-create-a-shopping-cart-ui-using-html-css-e5db3cd55aa0)
+- Design inspired by [Dribble](https://dribbble.com/tags/online_shopping_apps)
 
