@@ -141,8 +141,8 @@ footer .col ul li {
   padding: 5px 0px 5px 0px;
   cursor: pointer;
   transition: .2s;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
 }
 .social ul li {
   display: inline-block;
