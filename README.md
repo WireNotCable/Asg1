@@ -8,6 +8,8 @@ As a user, I am sometimes unaware of which things are clickable, so i decided to
 
 As a user, I want to have a hierarchy level so that the website is viewed from the top to bottom.
 
+[Link to Wireframe](https://xd.adobe.com/view/3a7223c1-9222-46d4-af8e-2bbc6678f171-6f21/)
+
 # Features : 
 
 Home page:
