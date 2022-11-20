@@ -1,3 +1,4 @@
+// to change banners in homepage
 let slideNum = 0;
 showSlides();
 
