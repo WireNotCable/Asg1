@@ -19,16 +19,12 @@ nav {
   flex-wrap: wrap;
 }
 nav ul { 
-  /* position: relative;
-  top: 0%;
-  margin-left: 8rem; */
   float:right;
   margin-right:15px;
   list-style: none;
 }
 nav ul li {
   display: inline-block;
-  /* line-height: 0px; */
   margin: auto;
   padding-right: 1.5rem;
 }
@@ -67,7 +63,6 @@ nav ul li a:hover {
   }
   nav ul li {
     display: inline-block;
-    /* line-height: 0px; */
     margin: auto;
     padding-right: 1.5rem;
   }
@@ -87,7 +82,7 @@ nav ul li a:hover {
       width:100%;
   }
 
-/* slider animation */
+/* slideshow */
 .slideshow-container {
   max-width: 100%;
   position: relative;
@@ -97,7 +92,6 @@ nav ul li a:hover {
 .active {
   background-color: #717171;
 }
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -107,7 +101,7 @@ nav ul li a:hover {
   to {opacity: 1}
 }
 
-/* FOOTER */
+/* footer */
 footer {
   width: 100%;
   position: relative;
@@ -122,19 +116,18 @@ footer .col {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 19px 19px 19px;
 }
 footer .col h1 {
   margin: 0;
-  padding: 0;
   font-family: inherit;
   font-size: 12px;
-  line-height: 17px;
-  padding: 20px 0px 5px 0px;
+  line-height: 15px;
+  padding: 19px 0px 6px 0px;
   color: rgba(255,255,255,0.4);
-  font-weight: normal;
+  font-weight: semi-bold;
   text-transform: uppercase;
-  letter-spacing: 0.250em;
+  letter-spacing: 0.25em;
 }
 footer .col ul {
   list-style-type: none;
@@ -143,9 +136,8 @@ footer .col ul {
 }
 footer .col ul li {
   color: #999999;
-  font-size: 14px;
+  font-size: 13px;
   font-family: inherit;
-  
   padding: 5px 0px 5px 0px;
   cursor: pointer;
   transition: .2s;
@@ -154,7 +146,7 @@ footer .col ul li {
 }
 .social ul li {
   display: inline-block;
-  padding-right: 5px !important;
+  padding-right: 5px;
 }
 .social ul li a:link,.social ul li a:visited{
   text-decoration: none;
@@ -193,21 +185,22 @@ footer .col ul li:hover {
     width: 33%;
   }
   footer .col h1 {
-    font-size: 14px;
+    font-size: 15px;
   }
   footer .col ul li {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
+
 @media screen and (max-width: 500px) {
     footer .col {
       width: 50%;
     }
     footer .col h1 {
-      font-size: 14px;
+      font-size: 15px;
     }
     footer .col ul li {
-      font-size: 13px;
+      font-size: 14px;
     }
 }
 @media screen and (max-width: 340px) {
