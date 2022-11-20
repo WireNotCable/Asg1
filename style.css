@@ -111,8 +111,8 @@ footer {
 }
 footer .footer-col {
   width: 190px;
-  height: auto;
   float: left;
+  height: auto;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -154,7 +154,7 @@ footer .footer-col ul li {
   color:#8e8e8e;
 }
 .social ul li a:hover{
-  color: #ffffff;
+  color: white;
 }
 
 footer .footer-col ul li:hover {
@@ -170,15 +170,6 @@ footer .footer-col ul li:hover {
   .footer-container {
     width: 100%;
     margin: 0 auto;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .footer-container .social {
-    width: 100%;
-    display: block;
-  }
-  .social h1 {
-    margin: 0px;
   }
 }
 @media screen and (max-width: 800px) {
