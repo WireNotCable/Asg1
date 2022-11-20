@@ -1,4 +1,5 @@
-# Asg1
+# Starbucks Website
+Ngee Ann Polytechnic - Interactive Development (ID) Assignment I
 
 # Objective : 
 This is a starbucks website for users to buy coffee and merchandise.
