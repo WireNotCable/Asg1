@@ -239,6 +239,7 @@ footer .footer-col ul li:hover {
   padding: 10px 20px;
   border-radius: 25px;
   text-align: center;
+  border: none;
 }
 .add-to-cart-btn:hover{
   background-color: #4C9F87;
