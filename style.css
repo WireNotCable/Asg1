@@ -14,7 +14,7 @@ nav {
   background-color:#00704A;
   height: 95px;
   width: 100%;
-  position: absolute;
+  position: relative;
   z-index: 1;
   flex-wrap: wrap;
 }
@@ -22,6 +22,8 @@ nav ul {
   float:right;
   margin-right:15px;
   list-style: none;
+  top: 95px;
+
 }
 nav ul li {
   display: inline-block;
@@ -35,7 +37,7 @@ nav ul li a {
   position:relative;
   top: 20px;
 } 
-nav ul li a:hover {
+nav ul li:hover {
   text-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
 }
 #starbuckslogo {
@@ -212,7 +214,6 @@ footer .footer-col ul li:hover {
   position:relative;
   padding: 3% 1%;
   width: 24.7%;
-  top:95px;
 }
 .product img, .product-description{
   width:100%;
