@@ -244,3 +244,8 @@ footer .footer-col ul li:hover {
 .add-to-cart-btn:hover{
   background-color: #4C9F87;
 }
+
+/* Cart Page */
+.cart-row {
+  position: relative;
+}
