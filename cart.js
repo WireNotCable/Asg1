@@ -31,7 +31,7 @@ for (let item of itemsData){
     }
 }
 updateTotal()
-quantityChanged()
+
 var removeCartItemButtons = document.getElementsByClassName("remove-btn")
 for (var i = 0; i<removeCartItemButtons.length; i++){
     var button = removeCartItemButtons[i]
