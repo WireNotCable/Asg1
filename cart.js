@@ -42,10 +42,11 @@ for (var i = 0; i<removeCartItemButtons.length; i++){
     })
 }
 
-var quantityInputs = document.getElementsByClassName("cart-quantity-input")
+var quantityInputs = document.getElementsByClassName("cart-quantity")
 for (var i = 0; i <quantityInputs.length;i++){
     var input = quantityInputs[i]
     input.addEventListener("change",quantityChanged)
+    
 }
 function quantityChanged(event){
     var input = event.target
