@@ -249,3 +249,71 @@ footer .footer-col ul li:hover {
 .cart-row {
   position: relative;
 }
+
+.cart-items{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.item{
+  display: flex;
+  margin-bottom: 2%;
+  margin-left: 2%;
+} 
+.cart-description{
+  width: 60%;
+  display: flex;
+}
+.cart-title{
+  justify-content: top;
+  margin-left: 2%;
+  font-size: 1.3rem;
+}
+.lastpart{
+  right:0px;
+}
+.cart-price{
+  padding: 0 3% 3% 3%;
+  display: inline-block;
+  font-size: 1.7rem;
+}
+.remove-btn{
+  cursor: pointer;
+  color:red;
+}
+
+.cart-total{
+  margin-right: 12%;
+  text-align: right;
+  font-size: 3rem;
+}
+.checkout-btn{
+  width:80%;
+  color: white;
+  background-color: #00704A;
+  padding: 1% 2%;
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+.checkout-btn:hover{
+  background-color: #4C9F87;
+}
+.checkout-btn a:visited{
+  text-decoration: none;
+  color:white;
+}
+.checkout-btn a:link, .checkout-btn a:hover{
+  color: white;
+}
+
+/* Checkout Page */
+form{
+  width: 80%;
+  background-color: pink;
+}
+#checkout-h1, #checkout-h2{
+  text-align: center;
+}

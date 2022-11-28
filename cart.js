@@ -16,15 +16,17 @@ for (let item of itemsData){
     var cartItems = document.getElementsByClassName('cart-items')[0]
 
     var cartRowContents = `
-        <div class="" src="">
+    <div class="item">
+        <div class="cart-description" src="">
         <img class="" src="${imageSrc}" width="100" height="100">
         <span class="cart-title">${title}</span>
         </div>
         <span class="cart-price">${price}</span>
-        <div class="">
+        <div class="lastpart">
         <input class="cart-quantity" type="number" value="${quantity}">
         <button class="remove-btn" type="button">REMOVE</button>
         </div>
+    </div>
     `
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
@@ -37,7 +39,8 @@ for (var i = 0; i<removeCartItemButtons.length; i++){
     var button = removeCartItemButtons[i]
     button.addEventListener('click',function(event){
         var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
+        buttonClicked.parentElement.parentElement.parentElement.remove()
+        // localStorage.removeItem()
         updateTotal()
     })
 }
@@ -48,6 +51,7 @@ for (var i = 0; i <quantityInputs.length;i++){
     input.addEventListener("change",quantityChanged)
     
 }
+
 function quantityChanged(event){
     var input = event.target
     if (input.value <= 0){
@@ -69,4 +73,5 @@ function updateTotal(){
         total = total + (price * quantity)
     }
     document.getElementsByClassName('cart-total-price')[0].innerText = `$ ${total}`
+    localStorage.setItem("quantityData", JSON.stringify(total));
 }
