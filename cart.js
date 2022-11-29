@@ -6,7 +6,6 @@ let itemsData = []
 
 // add selected items into cart page
 for (let item of itemsData){
-    
     addItemToCart(item.title, item.price, item.imageSrc, item.quantity)
 
 
@@ -18,7 +17,7 @@ for (let item of itemsData){
     var cartRowContents = `
     <div class="item">
         <div class="cart-description" src="">
-        <img class="" src="${imageSrc}" width="100" height="100">
+        <img class="picture" src="${imageSrc}" width="100" height="100">
         <span class="cart-title">${title}</span>
         </div>
         <span class="cart-price">${price}</span>
@@ -28,6 +27,7 @@ for (let item of itemsData){
         </div>
     </div>
     `
+    
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
     }
@@ -42,6 +42,7 @@ for (var i = 0; i<removeCartItemButtons.length; i++){
         buttonClicked.parentElement.parentElement.parentElement.remove()
         // localStorage.removeItem()
         updateTotal()
+        updateStorage()
     })
 }
 
@@ -58,6 +59,7 @@ function quantityChanged(event){
         input.value = 1
     }
     updateTotal()
+    updateStorage()
 }
 
 function updateTotal(){
@@ -75,3 +77,29 @@ function updateTotal(){
     document.getElementsByClassName('cart-total-price')[0].innerText = `$ ${total}`
     localStorage.setItem("quantityData", JSON.stringify(total));
 }
+
+function updateStorage(){
+    localStorage.clear()
+    var itemElement = document.querySelectorAll(".item")
+    console.log(itemElement)
+    let itemsData = []
+    for (var i = 0; i < itemElement.length; i++){
+        var title = itemElement[i].getElementsByClassName('cart-title')[0].innerText
+        var price = itemElement[i].getElementsByClassName('cart-price')[0].innerText
+        var imageSrc = itemElement[i].getElementsByClassName('picture')[0].src
+        var quantity = itemElement[i].getElementsByClassName('cart-quantity')[0].value
+        console.log(quantity)
+
+        let newData = new Data(title, price, imageSrc, quantity);
+        itemsData.push(newData);
+    }
+    localStorage.setItem("itemsData", JSON.stringify(itemsData));
+    
+}
+
+function Data(title, price, imageSrc, quantity) {
+    this.title = title;
+    this.price = price;
+    this.imageSrc = imageSrc;
+    this.quantity = quantity;
+  }

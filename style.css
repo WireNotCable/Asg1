@@ -313,6 +313,7 @@ footer .footer-col ul li:hover {
 form{
   width: 80%;
   background-color: pink;
+  margin-left: 10%;
 }
 #checkout-h1, #checkout-h2{
   text-align: center;
