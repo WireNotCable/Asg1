@@ -72,7 +72,7 @@ function updateTotal(){
         var quantityElement = cartRow.getElementsByClassName('cart-quantity')[0]
         var price = parseFloat(priceElement.innerText.replace('$',''))
         var quantity = quantityElement.value
-        total = total + (price * quantity)
+        total = parseFloat((total + (price * quantity)).toFixed(2))
     }
     document.getElementsByClassName('cart-total-price')[0].innerText = `$ ${total}`
     localStorage.setItem("quantityData", JSON.stringify(total));
@@ -103,3 +103,4 @@ function Data(title, price, imageSrc, quantity) {
     this.imageSrc = imageSrc;
     this.quantity = quantity;
   }
+
