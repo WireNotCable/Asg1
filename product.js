@@ -20,6 +20,10 @@ function addToCartClicked(event){
     itemsData = JSON.parse(localStorage.getItem("itemsData"));
   }
 
+  if (itemsData.some((item) => item.title === title)) {
+    return
+  }
+
   let newData = new Data(title, price, imageSrc, quantity);
 
 
