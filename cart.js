@@ -10,11 +10,11 @@ for (let item of itemsData){
 
 
     function addItemToCart(title, price, imageSrc, quantity){
-    var cartRow = document.createElement('div')
-    cartRow.classList.add('cart-row')
-    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var itemContainer = document.createElement('div')
+    itemContainer.classList.add('item-container')
+    var cartItems = document.querySelector('.cart-items')
 
-    var cartRowContents = `
+    var contents = `
     <div class="item">
         <div class="cart-description" src="">
         <img class="picture" src="${imageSrc}" width="100" height="100">
@@ -28,31 +28,31 @@ for (let item of itemsData){
     </div>
     `
     
-    cartRow.innerHTML = cartRowContents
-    cartItems.append(cartRow)
+    itemContainer.innerHTML = contents
+    cartItems.append(itemContainer)
     }
 }
 updateTotal()
 
-var removeCartItemButtons = document.getElementsByClassName("remove-btn")
+// remove cart items, update total amount and local storage
+var removeCartItemButtons = document.querySelectorAll(".remove-btn")
 for (var i = 0; i<removeCartItemButtons.length; i++){
     var button = removeCartItemButtons[i]
     button.addEventListener('click',function(event){
         var buttonClicked = event.target
         buttonClicked.parentElement.parentElement.parentElement.remove()
-        // localStorage.removeItem()
         updateTotal()
         updateStorage()
     })
 }
 
-var quantityInputs = document.getElementsByClassName("cart-quantity")
+var quantityInputs = document.querySelectorAll(".cart-quantity")
 for (var i = 0; i <quantityInputs.length;i++){
     var input = quantityInputs[i]
-    input.addEventListener("change",quantityChanged)
-    
+    input.addEventListener("change",quantityChanged)  
 }
 
+// update total amount and local storage when a cart item's quantity is changed
 function quantityChanged(event){
     var input = event.target
     if (input.value <= 0){
@@ -62,32 +62,34 @@ function quantityChanged(event){
     updateStorage()
 }
 
+// calculate total amount to pay
 function updateTotal(){
     var total = 0
     var cartItems = document.querySelector('.cart-items')
-    var cartRows = cartItems.getElementsByClassName('cart-row')
-    for (var i = 0; i < cartRows.length; i++){
-        var cartRow = cartRows[i]
-        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-        var quantityElement = cartRow.getElementsByClassName('cart-quantity')[0]
+    var cartContainers = cartItems.querySelectorAll('.item-container')
+    for (var i = 0; i < cartContainers.length; i++){
+        var itemContainer = cartContainers[i]
+        var priceElement = itemContainer.querySelector('.cart-price')
+        var quantityElement = itemContainer.querySelector('.cart-quantity')
         var price = parseFloat(priceElement.innerText.replace('$',''))
         var quantity = quantityElement.value
         total = parseFloat((total + (price * quantity)).toFixed(2))
     }
-    document.getElementsByClassName('cart-total-price')[0].innerText = `$ ${total}`
+    document.querySelector('.cart-total-price').innerText = `$ ${total}`
     localStorage.setItem("quantityData", JSON.stringify(total));
 }
 
+// clear local storage and add existing items back 
 function updateStorage(){
     localStorage.clear()
     var itemElement = document.querySelectorAll(".item")
     console.log(itemElement)
     let itemsData = []
     for (var i = 0; i < itemElement.length; i++){
-        var title = itemElement[i].getElementsByClassName('cart-title')[0].innerText
-        var price = itemElement[i].getElementsByClassName('cart-price')[0].innerText
-        var imageSrc = itemElement[i].getElementsByClassName('picture')[0].src
-        var quantity = itemElement[i].getElementsByClassName('cart-quantity')[0].value
+        var title = itemElement[i].querySelector('.cart-title').innerText
+        var price = itemElement[i].querySelector('.cart-price').innerText
+        var imageSrc = itemElement[i].querySelector('.picture').src
+        var quantity = itemElement[i].querySelector('.cart-quantity').value
         console.log(quantity)
 
         let newData = new Data(title, price, imageSrc, quantity);

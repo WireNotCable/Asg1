@@ -5,7 +5,7 @@ showSlides();
 
 function showSlides() {
   let i;
-  let slides = document.getElementsByClassName("slide");
+  let slides = document.querySelectorAll(".slide");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
