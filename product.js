@@ -21,6 +21,7 @@ function addToCartClicked(event){
   }
 
   if (itemsData.some((item) => item.title === title)) {
+    alert("Item has been added.")
     return
   }
 

@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <image class="checkout-bg"
+        src="https://th.bing.com/th/id/OIP.ZaGnrhOWrWet9LEfdeaF6AHaFj?w=221&h=180&c=7&r=0&o=5&dpr=2&pid=1.7"></image>
     <nav>
         <a href="index.html"><img id="starbuckslogo" src="https://shop.starbucks.com.sg/images/logo.svg"
                 alt="starbuckslogo"></a>
@@ -30,20 +32,22 @@
             <input class="checkout-input" type="number" placeholder="name" maxlength="16" required><br>
         </label>
         <label>Card type<br>
-            <select name="cars" id="cars">
+            <select class="checkout-input" name="cars" id="cars">
                 <option value="">--Select a Card Type--</option>
                 <option value="Visa">Visa</option>
                 <option value="MasterCard">MasterCard</option>
             </select>
         </label>
         <br>
+
         <label>Expiry
-            <input class="checkout-input" type="date" required>
+            <input class="checkout-input" id="expiry" type="date" required>
         </label>
         <label>CVV
-            <input class="checkout-input" type="password" required>
+            <input class="checkout-input" id="date" type="password" required>
         </label>
 
+        <button type="submit" class="submit-btn">CheckOut</button>
     </form>
 </body>
 
