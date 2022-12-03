@@ -206,23 +206,30 @@ footer .footer-col ul li:hover {
 .nav{
   position:absolute;
 }
+/* .products{
+  vertical-align: top;
+} */
 .product{
   display:inline-block;
   position:relative;
   padding: 3% 1%;
   width: 24.7%;
-  top:0px;
+  margin-top:0px;
+  height: 298.72px;
 }
 .product img, .product-description{
   width:100%;
 }
 .product img{
   border-radius:5%;
+  position:relative;
   top:0px;
 }
 .product-description{
   font-size: 1.3rem;
   font-weight:bold;
+  position:relative;
+  bottom:0px;
 }
 .price{
   margin-top: 3%;
@@ -248,10 +255,16 @@ footer .footer-col ul li:hover {
   .product{
     width:32%;
   }
+  .product-description{
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width:576px){
   .product{
-    width:48%
+    width:48%;
+  }
+  .product-description{
+    font-size: 0.8rem;
   }
 }
 
