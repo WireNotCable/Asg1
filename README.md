@@ -4,13 +4,13 @@ Ngee Ann Polytechnic - Interactive Development (ID) Assignment I
 
 # Objective :
 
-This is a starbucks website for users to buy coffee and merchandise.
+This is a starbucks website for users to buy Starbucksmerchandise.
 
 # Design Process:
 
 As a user, I am sometimes unaware of which things are clickable, so i decided to add hover effect to any clickable texts and buttons.
 
-As a user, I want to have a hierarchy level so that the website is viewed from the top to bottom.
+As a user, I want the website to be organised so that the website is viewed from the top to bottom.
 
 As a user, I want to have similar colour schemes as starbucks for better relatability so i decided to make white and green the main colours of my website.
 
