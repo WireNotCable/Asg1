@@ -12,7 +12,6 @@ function addToCartClicked(event){
   var price = shopItem.querySelector('.price').innerText
   var imageSrc = shopItem.querySelector('.picture').src
   var quantity = 1
-  console.log(title, price, imageSrc, quantity)
   let itemsData = []
   
   if (localStorage.getItem("itemsData") !== null) {

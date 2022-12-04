@@ -262,7 +262,7 @@ footer .footer-col ul li:hover {
 }
 
 /* Cart Page */
-.cart-row {
+.cart-container {
   position: relative;
 }
 .cart-items{
