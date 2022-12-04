@@ -2,7 +2,7 @@
 
 Ngee Ann Polytechnic - Interactive Development (ID) Assignment I
 
-#website live at : https://wirenotcable.github.io/Asg1/index.html
+# website live at : https://wirenotcable.github.io/Asg1/index.html
 
 # Objective :
 
