@@ -122,7 +122,6 @@ footer .footer-col h1 {
   margin: 0;
   font-family: inherit;
   font-size: 12px;
-  font-weight: semi-bold;
   color: rgba(255,255,255,0.4);
   line-height: 15px;
   padding: 19px 0px 6px 0px;
@@ -279,7 +278,6 @@ footer .footer-col ul li:hover {
   display: flex;
 }
 .cart-title{
-  justify-content: top;
   margin-left: 2%;
   font-size: 1.3rem;
 }
